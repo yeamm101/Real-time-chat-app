@@ -1,20 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visgram</title>
-    <link rel="icon" href="chat-bubble.png">
-    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <link rel="icon" href="chat-box.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
     <script defer src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div id="message-container">
-        <form id="send-container">
-            <input type="text" id="message-input">
-            <button type="submit" id="send-button">Send</button>
+    <nav class="navbar navbar-expand-lg " style="opacity: 100%;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="chat-box.png" alt="Bootstrap" width="30" height="24">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Visgram</a>
+                    </li>
+                </ul>
+                <a class="nav-link active" href="about.html">
+                    About us
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wel">
+        <p style="color: white;">Welcome to Visgram!! &#128075</p>
+        <form class="form-floating" action="chat.html">
+            <input class="input" type="text" placeholder="What shall we call you?">
         </form>
+        <a href="chat.html" value="submit"><button class="btn btn-primary">Continue</button></a>
     </div>
 </body>
-</html> 
+
+</html>

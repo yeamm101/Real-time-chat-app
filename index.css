@@ -1,0 +1,39 @@
+body {
+  background-image: url("Thumbnail\ Effect\ Purple\ And\ Dark\ Blue\ Color\ Background\ Background\ Best\ Stock\ Photos\ png\ -\ Free\ PNG\ Images.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: 100% 100%;
+}
+
+.nav-link {
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  color: white;
+  font-weight: bolder;
+}
+
+.wel {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.input {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+.btn  {
+    border-radius: 40px;
+    width: 250px;
+    margin-top: 10px;
+}

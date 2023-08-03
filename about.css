@@ -1,0 +1,25 @@
+body {
+  background-image: url("Thumbnail\ Effect\ Purple\ And\ Dark\ Blue\ Color\ Background\ Background\ Best\ Stock\ Photos\ png\ -\ Free\ PNG\ Images.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: 100% 100%;
+}
+
+.nav-link {
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  color: white;
+  font-weight: bolder;
+}
+
+.navbar {
+  display: flex;
+}
+
+.d {
+  margin: auto;
+  width: 50%;
+  padding: 130px;
+  color: white;
+}
+

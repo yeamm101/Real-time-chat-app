@@ -3,7 +3,11 @@ body {
   padding-bottom: 3rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif;
-  background-color: #DEA057;
+  background-image: url("Thumbnail\ Effect\ Purple\ And\ Dark\ Blue\ Color\ Background\ Background\ Best\ Stock\ Photos\ png\ -\ Free\ PNG\ Images.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: 100% 100%;
 }
 
 #send-container {
@@ -29,11 +33,11 @@ body {
   outline: none;
 }
 #send-container > button {
-  background: #333;
+  background: #800080;
   border: none;
   padding: 0 1rem;
   margin: 0.25rem;
-  border-radius: 3px;
+  border-radius: 23px;
   outline: none;
   color: #fff;
 }
@@ -48,4 +52,10 @@ body {
 }
 #message-container > li:nth-child(odd) {
   background: #efefef;
+}
+
+.nav-link {
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  color: white;
+  font-weight: bolder;
 }
