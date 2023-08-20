@@ -2,21 +2,21 @@ const socket = io('http://localhost:3000')
 const messageContainer = document.getElementById('message-container')
 const messageForm = document.getElementById('send-container')
 const messageInput = document.getElementById('message-input')
+const messagecont = document.getElementById('message-container')
 
-const name = document.getElementsByClassName("message-input");
-appendMessage('You have  joined the Visgram')
+const name = prompt('What is your name?');
+console.log('You have joined the Visgram')
 socket.emit('new-user', name)
-
 socket.on('chat-message', data => {
     appendMessage(`${data.name}: ${data.message}`);
 })
 
 socket.on("user-connected", (name) => {
-  appendMessage(`${name} connected`);
+  appendMessage(`${name} has connected`);
 });
 
 socket.on("user-disconnected", (name) => {
-  appendMessage(`${name} disconnected`);
+  appendMessage(`${name} has disconnected`);
 });
 
 messageForm.addEventListener('submit', e => {
@@ -28,7 +28,8 @@ messageForm.addEventListener('submit', e => {
 })
 
 function appendMessage(message) {
-    const messageElement = document.createElement('div')
-    messageElement.innerText = message
-    messageContainer.append(messageElement)
+  const messageElementSender = document.createElement("div");
+  messageElementSender.innerText = message;
+  messageContainer.append(messageElementSender);
+  messageElementSender.className = "my-div";
 }

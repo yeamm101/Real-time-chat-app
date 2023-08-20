@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visgram</title>
+    <title>Chat box</title>
     <link rel="icon" href="chat-box.png">
     <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chat.css">
 </head>
+
 <body>
-    <div id="message-container">
+    
+    <div id="message-container" class="container-xl"> 
         <form id="send-container">
+            <a class="navbar-brand" href="index.html">
+                <img src="chat-box.png" alt="Bootstrap" width="30" height="36">
+            </a>
             <input type="text" id="message-input">
             <button type="submit" id="send-button">Send</button>
         </form>
     </div>
 </body>
-</html> 
+
+</html>
